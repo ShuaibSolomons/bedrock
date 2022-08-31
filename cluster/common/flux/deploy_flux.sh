@@ -96,7 +96,7 @@ cd "$REPO_ROOT_DIR" || exit 1
 
 echo "cloning $FLUX_REPO_URL"
 
-if ! git clone -b "master" "$FLUX_REPO_URL"; then
+if ! git clone -b "$FLUX_IMAGE_TAG" "$FLUX_REPO_URL"; then
     echo "ERROR: failed to clone $FLUX_REPO_URL"
     exit 1
 fi
